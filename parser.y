@@ -38,11 +38,11 @@
 //1|<func>::=<type>name(<type>name<p_1>){<p_2>}<p_2>
 func : type NAME LBRACE type NAME p_1 RBRACE LCBRACE p_2 RCBRACE p_2
 	;
-//2|<p_1>::= ,<type>name<p_1>
+//2|<p_1>::= ,<type>name<p_1> | e
 p_1 : COMMA type NAME p_1
-	| //e 
+	| 
 	;
-//4|<p_2>::=name(<p_3>);<p_2>
+//4|<p_2>::=name(<p_3>);<p_2> | e
 p_2 : NAME LBRACE p_3 RBRACE DACOMMA p_2
 	| //e 
 	;
