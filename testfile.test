@@ -1,0 +1,1 @@
+void test(int x){print(x);print(2);}test(7);
