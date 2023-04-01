@@ -44,7 +44,7 @@ p_1 : COMMA type NAME p_1
 	;
 //4|<p_2>::=name(<p_3>);<p_2> | e
 p_2 : NAME LBRACE p_3 RBRACE DACOMMA p_2
-	| //e 
+	| 
 	;
 //6|<p_3>::= name|value
 p_3 : NAME
